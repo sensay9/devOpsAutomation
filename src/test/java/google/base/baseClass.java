@@ -16,6 +16,7 @@ public class baseClass {
         //System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
         driver = new ChromeDriver();
         driver.get("https://www.saucedemo.com/v1/index.html");
+        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 
