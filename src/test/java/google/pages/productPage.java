@@ -21,4 +21,9 @@ public class productPage {
         String actualText = productTitle.getText();
         Assert.assertTrue(actualText.contains(expectedText), "Product title does not contain the expected text");
     }
+
+    public String validateProductPageURL() {
+        return driver.getCurrentUrl();
+    }
 }
+
